@@ -73,18 +73,17 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         
         imageReference.putData(data, metadata: nil) { (metadata, err) in
             if err != nil {
-                print("errore errore errore 1!")
-                print(err.debugDescription)
+                print("errore errore errore!")
                 return
             }
             imageReference.downloadURL { (url, err) in
                 if err != nil {
-                    print("errore errore errore 2!")
+                    print("errore errore errore!")
                     return
                 }
                 
                 guard let url = url else {
-                    print("errore errore errore 3!")
+                    print("errore errore errore!")
                     return
                 }
                 
@@ -193,6 +192,8 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 
                 print(data)
                 
+                
+                
                 let cf = matches(for: "\\b(?:[A-Z][AEIOU][AEIOUX]|[B-DF-HJ-NP-TV-Z]{2}[A-Z]){2}(?:[\\dLMNP-V]{2}(?:[A-EHLMPR-T](?:[04LQ][1-9MNP-V]|[15MR][\\dLMNP-V]|[26NS][0-8LMNP-U])|[DHPS][37PT][0L]|[ACELMRT][37PT][01LM]|[AC-EHLMPR-T][26NS][9V])|(?:[02468LNQSU][048LQU]|[13579MPRTV][26NS])B[26NS][9V])(?:[A-MZ][1-9MNP-V][\\dLMNP-V]{2}|[A-M][0L](?:[1-9MNP-V][\\dLMNP-V]|[0L][1-9MNP-V]))[A-Z]\\b", in: testoScontrino ?? "cf non trovato")
                 setCf(testo: cf)
                 
@@ -204,8 +205,9 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
          }
     
     func trovaTotale(testo: String) {
-        var count = 0
-        var totale : [Int] = [00,00]
+        
+        //var count = 0
+        //var totale : [Int] = [00,00]
         
         let arrayTesto = testo.components(separatedBy: "\n")
         
@@ -215,6 +217,14 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
             
             if (index.contains("TOTALE")) || (index.contains("IMPORTO")) || (index.contains("TOT.")){
                 
+                let tot = matches(for: "[-+]?[0-9]*\\.?[0-9]+", in: index )
+                let totfinale = tot.joined()
+                
+                print("questo è il totale rilevato : \(tot) ")
+                formTotale.text = totfinale
+                
+                
+                /*
                 let string = index
                 let stringArray = string.components(separatedBy: CharacterSet.decimalDigits.inverted)
                 for item in stringArray {
@@ -230,22 +240,21 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 }
                 
               
-                count = 0
+                count = 0 */
                        
             }
             
-            let stringArray2 = totale.map { String($0) }
-            let string2 = stringArray2.joined(separator: ".")
-                             
-                          formTotale.text = string2
+        //let stringArray2 = totale.map { String($0) }
+        //let string2 = stringArray2.joined(separator: ".")
+        
                           
         }
         //INSERIRE VALORE IN TEXT FIELD
 }
     
         func trovaDetraibile(testo: String) {
-            var count = 0
-            var totale : [Int] = [00,00]
+           // var count = 0
+           // var totale : [Int] = [00,00]
             
             let arrayTesto = testo.components(separatedBy: "\n")
             
@@ -255,6 +264,13 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 
                 if (index.contains("detraibile")) || (index.contains("Medicinali")){
                     
+                    let detra = matches(for: "[-+]?[0-9]*\\.?[0-9]+", in: index )
+                                   let detrafinale = detra.joined()
+                                   
+                                   print("questo è il totale rilevato : \(detra) ")
+                                   formTotale.text = detrafinale
+                    
+                    /*
                     let string = index
                     let stringArray = string.components(separatedBy: CharacterSet.decimalDigits.inverted)
                     for item in stringArray {
@@ -267,14 +283,14 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                         }
                     }
                     
-                count = 0
+                count = 0 */
                            
                 }
                 
-                let stringArray2 = totale.map { String($0) }
-                let string2 = stringArray2.joined(separator: ".")
+             //   let stringArray2 = totale.map { String($0) }
+             //   let string2 = stringArray2.joined(separator: ".")
                                  
-            formDetraibile.text = string2
+            // formDetraibile.text = string2
                               
             }
             //INSERIRE VALORE IN TEXT FIELD
@@ -325,5 +341,4 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
  
     
 }
-
   
