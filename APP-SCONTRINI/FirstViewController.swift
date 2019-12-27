@@ -15,6 +15,11 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func vaiAllaPagineDiLogin(_ sender: Any) {
+        let loginController = storyboard?.instantiateViewController(withIdentifier: "loginViewPage")
+        view.window?.rootViewController = loginController
+        
+    }
+    
 }
 

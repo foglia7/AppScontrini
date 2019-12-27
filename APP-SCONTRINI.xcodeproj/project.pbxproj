@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36417ECB5CC4DBA7AF4032B8 /* Pods_APP_SCONTRINI_APP_SCONTRINIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B39EC6CF0CECB4E22E0CB9B /* Pods_APP_SCONTRINI_APP_SCONTRINIUITests.framework */; };
+		39053307238B5A9300B5B6AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39053306238B5A9300B5B6AA /* Constants.swift */; };
 		390EC0FD2382E46900A988D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390EC0FC2382E46900A988D0 /* AppDelegate.swift */; };
 		390EC0FF2382E46900A988D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390EC0FE2382E46900A988D0 /* SceneDelegate.swift */; };
 		390EC1012382E46900A988D0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390EC1002382E46900A988D0 /* FirstViewController.swift */; };
@@ -16,6 +18,20 @@
 		390EC10B2382E46A00A988D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390EC1092382E46A00A988D0 /* LaunchScreen.storyboard */; };
 		390EC1162382E46A00A988D0 /* APP_SCONTRINITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390EC1152382E46A00A988D0 /* APP_SCONTRINITests.swift */; };
 		390EC1212382E46A00A988D0 /* APP_SCONTRINIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390EC1202382E46A00A988D0 /* APP_SCONTRINIUITests.swift */; };
+		391C630523896452004D6283 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C630423896452004D6283 /* SignUpViewController.swift */; };
+		391C630723896479004D6283 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C630623896479004D6283 /* LogInViewController.swift */; };
+		391DF0DA238BE79900E42123 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DF0D9238BE79900E42123 /* AccountViewController.swift */; };
+		393B116A23AC1948007E485A /* mesiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B116923AC1948007E485A /* mesiViewController.swift */; };
+		393B116C23AC2C59007E485A /* scontriniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B116B23AC2C59007E485A /* scontriniViewController.swift */; };
+		3968A21E238DD7DA00039D43 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3968A21D238DD7DA00039D43 /* tessdata */; };
+		397C524C238D782000A82389 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397C524B238D782000A82389 /* PhotoViewController.swift */; };
+		399489F62388989C00EC81CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399489F52388989C00EC81CC /* GoogleService-Info.plist */; };
+		39BA2FCB238C47D6005EC1F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA2FCA238C47D6005EC1F9 /* MainViewController.swift */; };
+		39C72DCF23A7A56B00065ED8 /* ArchivioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C72DCE23A7A56B00065ED8 /* ArchivioViewController.swift */; };
+		39D49CEB23898B760077229C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D49CEA23898B760077229C /* StartViewController.swift */; };
+		39F93ECA23AE42370039B8B5 /* scontrinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F93EC923AE42370039B8B5 /* scontrinoCollectionViewCell.swift */; };
+		A641716F3722C8A9D97C378A /* Pods_APP_SCONTRINITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325FFAC2E62E3B1D52828E41 /* Pods_APP_SCONTRINITests.framework */; };
+		B3BB52F282A3998EFF8F440C /* Pods_APP_SCONTRINI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE309A8F99FD1763AC7D642 /* Pods_APP_SCONTRINI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13097AF8A4318E7AB8240C89 /* Pods-APP-SCONTRINITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SCONTRINITests.debug.xcconfig"; path = "Target Support Files/Pods-APP-SCONTRINITests/Pods-APP-SCONTRINITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1B7AF828CCFC4A3C443C4EB0 /* Pods-APP-SCONTRINI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SCONTRINI.debug.xcconfig"; path = "Target Support Files/Pods-APP-SCONTRINI/Pods-APP-SCONTRINI.debug.xcconfig"; sourceTree = "<group>"; };
+		2CE309A8F99FD1763AC7D642 /* Pods_APP_SCONTRINI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SCONTRINI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		325FFAC2E62E3B1D52828E41 /* Pods_APP_SCONTRINITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SCONTRINITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39053306238B5A9300B5B6AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		390EC0F92382E46900A988D0 /* APP-SCONTRINI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "APP-SCONTRINI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		390EC0FC2382E46900A988D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		390EC0FE2382E46900A988D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +72,23 @@
 		390EC11C2382E46A00A988D0 /* APP-SCONTRINIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APP-SCONTRINIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		390EC1202382E46A00A988D0 /* APP_SCONTRINIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APP_SCONTRINIUITests.swift; sourceTree = "<group>"; };
 		390EC1222382E46A00A988D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391C630423896452004D6283 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		391C630623896479004D6283 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		391DF0D9238BE79900E42123 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		393B116923AC1948007E485A /* mesiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mesiViewController.swift; sourceTree = "<group>"; };
+		393B116B23AC2C59007E485A /* scontriniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scontriniViewController.swift; sourceTree = "<group>"; };
+		3968A21D238DD7DA00039D43 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		397C524B238D782000A82389 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		399489F52388989C00EC81CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		39BA2FCA238C47D6005EC1F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010MainViewController.swift"; sourceTree = "<group>"; };
+		39C72DCE23A7A56B00065ED8 /* ArchivioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivioViewController.swift; sourceTree = "<group>"; };
+		39D49CEA23898B760077229C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		39F93EC923AE42370039B8B5 /* scontrinoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scontrinoCollectionViewCell.swift; sourceTree = "<group>"; };
+		450F58671934534939A90066 /* Pods-APP-SCONTRINI-APP-SCONTRINIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SCONTRINI-APP-SCONTRINIUITests.debug.xcconfig"; path = "Target Support Files/Pods-APP-SCONTRINI-APP-SCONTRINIUITests/Pods-APP-SCONTRINI-APP-SCONTRINIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5BF0E073A9EE6913FE26D5F4 /* Pods-APP-SCONTRINI-APP-SCONTRINIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SCONTRINI-APP-SCONTRINIUITests.release.xcconfig"; path = "Target Support Files/Pods-APP-SCONTRINI-APP-SCONTRINIUITests/Pods-APP-SCONTRINI-APP-SCONTRINIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6B39EC6CF0CECB4E22E0CB9B /* Pods_APP_SCONTRINI_APP_SCONTRINIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SCONTRINI_APP_SCONTRINIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D3E2FC98FD75847C9C78C7F /* Pods-APP-SCONTRINITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SCONTRINITests.release.xcconfig"; path = "Target Support Files/Pods-APP-SCONTRINITests/Pods-APP-SCONTRINITests.release.xcconfig"; sourceTree = "<group>"; };
+		CEE87338E68C76ADA289FB38 /* Pods-APP-SCONTRINI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SCONTRINI.release.xcconfig"; path = "Target Support Files/Pods-APP-SCONTRINI/Pods-APP-SCONTRINI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BB52F282A3998EFF8F440C /* Pods_APP_SCONTRINI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A641716F3722C8A9D97C378A /* Pods_APP_SCONTRINITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36417ECB5CC4DBA7AF4032B8 /* Pods_APP_SCONTRINI_APP_SCONTRINIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +126,8 @@
 				390EC1142382E46A00A988D0 /* APP-SCONTRINITests */,
 				390EC11F2382E46A00A988D0 /* APP-SCONTRINIUITests */,
 				390EC0FA2382E46900A988D0 /* Products */,
+				FD291748058EFE2093829545 /* Pods */,
+				3FA39BADCEF16472BFF45EDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +144,27 @@
 		390EC0FB2382E46900A988D0 /* APP-SCONTRINI */ = {
 			isa = PBXGroup;
 			children = (
+				39053306238B5A9300B5B6AA /* Constants.swift */,
 				390EC0FC2382E46900A988D0 /* AppDelegate.swift */,
 				390EC0FE2382E46900A988D0 /* SceneDelegate.swift */,
 				390EC1002382E46900A988D0 /* FirstViewController.swift */,
 				390EC1022382E46900A988D0 /* SecondViewController.swift */,
 				390EC1042382E46900A988D0 /* Main.storyboard */,
+				399489F52388989C00EC81CC /* GoogleService-Info.plist */,
 				390EC1072382E46A00A988D0 /* Assets.xcassets */,
+				3968A21D238DD7DA00039D43 /* tessdata */,
 				390EC1092382E46A00A988D0 /* LaunchScreen.storyboard */,
 				390EC10C2382E46A00A988D0 /* Info.plist */,
+				391C630423896452004D6283 /* SignUpViewController.swift */,
+				391C630623896479004D6283 /* LogInViewController.swift */,
+				39D49CEA23898B760077229C /* StartViewController.swift */,
+				391DF0D9238BE79900E42123 /* AccountViewController.swift */,
+				39BA2FCA238C47D6005EC1F9 /* MainViewController.swift */,
+				397C524B238D782000A82389 /* PhotoViewController.swift */,
+				39C72DCE23A7A56B00065ED8 /* ArchivioViewController.swift */,
+				393B116923AC1948007E485A /* mesiViewController.swift */,
+				393B116B23AC2C59007E485A /* scontriniViewController.swift */,
+				39F93EC923AE42370039B8B5 /* scontrinoCollectionViewCell.swift */,
 			);
 			path = "APP-SCONTRINI";
 			sourceTree = "<group>";
@@ -131,6 +187,29 @@
 			path = "APP-SCONTRINIUITests";
 			sourceTree = "<group>";
 		};
+		3FA39BADCEF16472BFF45EDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CE309A8F99FD1763AC7D642 /* Pods_APP_SCONTRINI.framework */,
+				6B39EC6CF0CECB4E22E0CB9B /* Pods_APP_SCONTRINI_APP_SCONTRINIUITests.framework */,
+				325FFAC2E62E3B1D52828E41 /* Pods_APP_SCONTRINITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD291748058EFE2093829545 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B7AF828CCFC4A3C443C4EB0 /* Pods-APP-SCONTRINI.debug.xcconfig */,
+				CEE87338E68C76ADA289FB38 /* Pods-APP-SCONTRINI.release.xcconfig */,
+				450F58671934534939A90066 /* Pods-APP-SCONTRINI-APP-SCONTRINIUITests.debug.xcconfig */,
+				5BF0E073A9EE6913FE26D5F4 /* Pods-APP-SCONTRINI-APP-SCONTRINIUITests.release.xcconfig */,
+				13097AF8A4318E7AB8240C89 /* Pods-APP-SCONTRINITests.debug.xcconfig */,
+				8D3E2FC98FD75847C9C78C7F /* Pods-APP-SCONTRINITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 390EC1252382E46A00A988D0 /* Build configuration list for PBXNativeTarget "APP-SCONTRINI" */;
 			buildPhases = (
+				40F4755AE0CC7133C12145C6 /* [CP] Check Pods Manifest.lock */,
 				390EC0F52382E46900A988D0 /* Sources */,
 				390EC0F62382E46900A988D0 /* Frameworks */,
 				390EC0F72382E46900A988D0 /* Resources */,
+				D66E820C75F2D1ACFC40A88D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 390EC1282382E46A00A988D0 /* Build configuration list for PBXNativeTarget "APP-SCONTRINITests" */;
 			buildPhases = (
+				E5F859B2BE9FB31078C818D2 /* [CP] Check Pods Manifest.lock */,
 				390EC10D2382E46A00A988D0 /* Sources */,
 				390EC10E2382E46A00A988D0 /* Frameworks */,
 				390EC10F2382E46A00A988D0 /* Resources */,
@@ -173,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 390EC12B2382E46A00A988D0 /* Build configuration list for PBXNativeTarget "APP-SCONTRINIUITests" */;
 			buildPhases = (
+				CFA7198988680CABFC87B512 /* [CP] Check Pods Manifest.lock */,
 				390EC1182382E46A00A988D0 /* Sources */,
 				390EC1192382E46A00A988D0 /* Frameworks */,
 				390EC11A2382E46A00A988D0 /* Resources */,
+				E8A407B3B84934F614B20631 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +320,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				390EC10B2382E46A00A988D0 /* LaunchScreen.storyboard in Resources */,
+				399489F62388989C00EC81CC /* GoogleService-Info.plist in Resources */,
+				3968A21E238DD7DA00039D43 /* tessdata in Resources */,
 				390EC1082382E46A00A988D0 /* Assets.xcassets in Resources */,
 				390EC1062382E46900A988D0 /* Main.storyboard in Resources */,
 			);
@@ -257,15 +343,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40F4755AE0CC7133C12145C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APP-SCONTRINI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFA7198988680CABFC87B512 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APP-SCONTRINI-APP-SCONTRINIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D66E820C75F2D1ACFC40A88D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APP-SCONTRINI/Pods-APP-SCONTRINI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APP-SCONTRINI/Pods-APP-SCONTRINI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APP-SCONTRINI/Pods-APP-SCONTRINI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5F859B2BE9FB31078C818D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APP-SCONTRINITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8A407B3B84934F614B20631 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APP-SCONTRINI-APP-SCONTRINIUITests/Pods-APP-SCONTRINI-APP-SCONTRINIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APP-SCONTRINI-APP-SCONTRINIUITests/Pods-APP-SCONTRINI-APP-SCONTRINIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APP-SCONTRINI-APP-SCONTRINIUITests/Pods-APP-SCONTRINI-APP-SCONTRINIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		390EC0F52382E46900A988D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				390EC1032382E46900A988D0 /* SecondViewController.swift in Sources */,
+				393B116A23AC1948007E485A /* mesiViewController.swift in Sources */,
+				39D49CEB23898B760077229C /* StartViewController.swift in Sources */,
+				39BA2FCB238C47D6005EC1F9 /* MainViewController.swift in Sources */,
+				39C72DCF23A7A56B00065ED8 /* ArchivioViewController.swift in Sources */,
+				39F93ECA23AE42370039B8B5 /* scontrinoCollectionViewCell.swift in Sources */,
 				390EC1012382E46900A988D0 /* FirstViewController.swift in Sources */,
+				391C630723896479004D6283 /* LogInViewController.swift in Sources */,
 				390EC0FD2382E46900A988D0 /* AppDelegate.swift in Sources */,
 				390EC0FF2382E46900A988D0 /* SceneDelegate.swift in Sources */,
+				391C630523896452004D6283 /* SignUpViewController.swift in Sources */,
+				393B116C23AC2C59007E485A /* scontriniViewController.swift in Sources */,
+				39053307238B5A9300B5B6AA /* Constants.swift in Sources */,
+				391DF0DA238BE79900E42123 /* AccountViewController.swift in Sources */,
+				397C524C238D782000A82389 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +554,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -414,6 +615,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -436,10 +638,14 @@
 		};
 		390EC1262382E46A00A988D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B7AF828CCFC4A3C443C4EB0 /* Pods-APP-SCONTRINI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T34K3TN547;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "APP-SCONTRINI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,10 +659,14 @@
 		};
 		390EC1272382E46A00A988D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE87338E68C76ADA289FB38 /* Pods-APP-SCONTRINI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T34K3TN547;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "APP-SCONTRINI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +680,7 @@
 		};
 		390EC1292382E46A00A988D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13097AF8A4318E7AB8240C89 /* Pods-APP-SCONTRINITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +702,7 @@
 		};
 		390EC12A2382E46A00A988D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D3E2FC98FD75847C9C78C7F /* Pods-APP-SCONTRINITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +724,7 @@
 		};
 		390EC12C2382E46A00A988D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450F58671934534939A90066 /* Pods-APP-SCONTRINI-APP-SCONTRINIUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -531,6 +744,7 @@
 		};
 		390EC12D2382E46A00A988D0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF0E073A9EE6913FE26D5F4 /* Pods-APP-SCONTRINI-APP-SCONTRINIUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

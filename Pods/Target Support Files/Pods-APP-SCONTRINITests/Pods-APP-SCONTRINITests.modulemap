@@ -1,0 +1,6 @@
+framework module Pods_APP_SCONTRINITests {
+  umbrella header "Pods-APP-SCONTRINITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
