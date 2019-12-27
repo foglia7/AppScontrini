@@ -1,6 +1,6 @@
 # Calcola Codice Fiscale
 
-Simple project that computes the correct CF code.
+General description
 
 ## Live demo
 
