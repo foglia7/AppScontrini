@@ -63,7 +63,7 @@ func collectionView (_ collectionView: UICollectionView, cellForItemAt indexPath
         cell.scontrinoImageView.load(url: imageUrl)
 
         cell.cfLabel.text = scontrino["CF"]
-        cell.dataLabel.text = scontrino["data"]
+    cell.dataLabel.text = scontrino["data"]
         cell.totaleLabel.text = scontrino["totale"]
         cell.detraibileLabel.text = scontrino["detraibile"]
         
