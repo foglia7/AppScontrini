@@ -25,11 +25,16 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     @IBOutlet weak var formDetraibile: UITextField!
     
+    
     @IBOutlet weak var datePicker: UIDatePicker!
      
     var imagePicker : UIImagePickerController?
    
     @IBAction func postImage(_ sender: Any) {
+        
+        if (formCF.text!.isEmpty) || (formTotale.text!.isEmpty) && (formDetraibile.text!.isEmpty){
+             self.showToast(message: "Riempire tutti i campi")
+        }else {
         
         guard let image = imageView.image, let data = image.jpegData(compressionQuality: 1.0) else {
             
@@ -63,9 +68,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                                                 print("There was an error decoding the string")
                                              }
         
-        
-        
-        
         let imageName = UUID().uuidString
         var urlScontrino = " "
        
@@ -88,22 +90,17 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 }
                 
                 urlScontrino = url.absoluteString
+                let hashScontrino = String(self.strHash(urlScontrino))
+                print(urlScontrino)
+                print(String(self.strHash(urlScontrino)))
                 print("questo è l'url: \(urlScontrino)")
                 
                 let db = Firestore.firestore()
-                
-              
-                
-                
-                           
-                     if let uid = Auth.auth().currentUser?.uid {
+                if let uid = Auth.auth().currentUser?.uid {
                         
-                        
-                       
-                         
-                         let campo = db.collection("users").document(uid)
+                    let campo = db.collection("users").document(uid)
                                       
-                             campo.collection("scontrini").document(imageName).setData([
+                             campo.collection("scontrini").document(hashScontrino).setData([
                                  "URL": urlScontrino ,
                                  "data": self.datePicker.date.description,
                                  "detraibile": self.formDetraibile.text ?? " ",
@@ -118,23 +115,18 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                                      print("Error writing document: \(err)")
                                  } else {
                                      print("Document successfully written!")
-                                  
-                                 }
+                                    self.showToast(message: "Documento Aggiunto!")
+                                    self.resetView()
+                                
+                               }
                              }
-                         
 
-                     
-                     
                      }
             }
-        }
-        
-        
-        
-        
-     
-        
+            
     }
+        }
+}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -337,8 +329,42 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         }
     }
     
+    func showToast(message : String) {
+
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2-self.view.frame.size.width/4, y: self.view.frame.size.height-210, width: 200, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        // toastLabel.font = font
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
+             toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
+    
+    func resetView(){
+        self.formCF.text = nil
+        self.formTotale.text = nil
+        self.formDetraibile.text = nil
+        let yourImage: UIImage = UIImage(named: "bill")!
+        self.imageView.image = yourImage
+    }
+    func strHash(_ str: String) -> UInt64 {
+           var result = UInt64 (5381)
+           let buf = [UInt8](str.utf8)
+           for b in buf {
+               result = 127 * (result & 0x00ffffffffffffff) + UInt64(b)
+           }
+           return result
+       }
+    
   
- 
     
 }
   

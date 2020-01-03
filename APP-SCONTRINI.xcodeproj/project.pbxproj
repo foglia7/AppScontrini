@@ -23,6 +23,8 @@
 		391DF0DA238BE79900E42123 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DF0D9238BE79900E42123 /* AccountViewController.swift */; };
 		393B116A23AC1948007E485A /* mesiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B116923AC1948007E485A /* mesiViewController.swift */; };
 		393B116C23AC2C59007E485A /* scontriniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B116B23AC2C59007E485A /* scontriniViewController.swift */; };
+		3944223E23BD56BD00683888 /* ProvaBottoneDentroCella.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3944223D23BD56BD00683888 /* ProvaBottoneDentroCella.swift */; };
+		3944224023BD5FEC00683888 /* ProvettaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3944223F23BD5FEC00683888 /* ProvettaCell.swift */; };
 		3968A21E238DD7DA00039D43 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3968A21D238DD7DA00039D43 /* tessdata */; };
 		397C524C238D782000A82389 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397C524B238D782000A82389 /* PhotoViewController.swift */; };
 		399489F62388989C00EC81CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399489F52388989C00EC81CC /* GoogleService-Info.plist */; };
@@ -77,6 +79,8 @@
 		391DF0D9238BE79900E42123 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		393B116923AC1948007E485A /* mesiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mesiViewController.swift; sourceTree = "<group>"; };
 		393B116B23AC2C59007E485A /* scontriniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scontriniViewController.swift; sourceTree = "<group>"; };
+		3944223D23BD56BD00683888 /* ProvaBottoneDentroCella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvaBottoneDentroCella.swift; sourceTree = "<group>"; };
+		3944223F23BD5FEC00683888 /* ProvettaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvettaCell.swift; sourceTree = "<group>"; };
 		3968A21D238DD7DA00039D43 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		397C524B238D782000A82389 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		399489F52388989C00EC81CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -150,8 +154,10 @@
 				390EC1002382E46900A988D0 /* FirstViewController.swift */,
 				390EC1022382E46900A988D0 /* SecondViewController.swift */,
 				390EC1042382E46900A988D0 /* Main.storyboard */,
+				3944223F23BD5FEC00683888 /* ProvettaCell.swift */,
 				399489F52388989C00EC81CC /* GoogleService-Info.plist */,
 				390EC1072382E46A00A988D0 /* Assets.xcassets */,
+				3944223D23BD56BD00683888 /* ProvaBottoneDentroCella.swift */,
 				3968A21D238DD7DA00039D43 /* tessdata */,
 				390EC1092382E46A00A988D0 /* LaunchScreen.storyboard */,
 				390EC10C2382E46A00A988D0 /* Info.plist */,
@@ -457,8 +463,10 @@
 				39BA2FCB238C47D6005EC1F9 /* MainViewController.swift in Sources */,
 				39C72DCF23A7A56B00065ED8 /* ArchivioViewController.swift in Sources */,
 				39F93ECA23AE42370039B8B5 /* scontrinoCollectionViewCell.swift in Sources */,
+				3944224023BD5FEC00683888 /* ProvettaCell.swift in Sources */,
 				390EC1012382E46900A988D0 /* FirstViewController.swift in Sources */,
 				391C630723896479004D6283 /* LogInViewController.swift in Sources */,
+				3944223E23BD56BD00683888 /* ProvaBottoneDentroCella.swift in Sources */,
 				390EC0FD2382E46900A988D0 /* AppDelegate.swift in Sources */,
 				390EC0FF2382E46900A988D0 /* SceneDelegate.swift in Sources */,
 				391C630523896452004D6283 /* SignUpViewController.swift in Sources */,
@@ -728,6 +736,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "APP-SCONTRINIUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -748,6 +757,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "APP-SCONTRINIUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

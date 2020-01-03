@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FirebaseStorage
+import FirebaseFirestore
+import FirebaseAuth
 
 class scontrinoCollectionViewCell: UICollectionViewCell {
     
@@ -16,5 +19,11 @@ class scontrinoCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var totaleLabel: UILabel!
     @IBOutlet weak var detraibileLabel: UILabel!
+    @IBOutlet weak var eliminaBottone: UIButton!
+    
+    @IBAction func minchia(_ sender: Any) {
+        print("sicuro????")
+        //rimuoviScontrino()
+    }
     
 }

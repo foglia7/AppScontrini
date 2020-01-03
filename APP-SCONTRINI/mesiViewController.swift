@@ -42,11 +42,12 @@ class mesiViewController: UIViewController,  UITableViewDataSource , UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-       let vc = storyboard?.instantiateViewController(withIdentifier: "scontriniViewController") as? scontriniViewController
-       
+       //let vc = storyboard?.instantiateViewController(withIdentifier: "scontriniViewController") as? scontriniViewController
+       let vc = storyboard?.instantiateViewController(withIdentifier: "nonNeHoIdea") as? ProvaBottoneDentroCella
        //let cell = tableView.cellForRow(at: indexPath)
       // let cellText = cell!.textLabel?.text ?? "NON RILEVATO"
        
+        //vc?.meseCella = arrayMesi[indexPath.row]
         vc?.meseCella = arrayMesi[indexPath.row]
        vc?.titoloCella = titoloCella
        
