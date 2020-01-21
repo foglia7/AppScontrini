@@ -61,6 +61,10 @@ class ArchivioViewController: UIViewController , UITableViewDataSource , UITable
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        anni()
+    }
+    
 
     
 func anni() {

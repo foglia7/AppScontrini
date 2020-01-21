@@ -17,5 +17,6 @@ class ProvettaCell: UICollectionViewCell {
     @IBOutlet weak var buttonCella: UIButton!
     @IBOutlet weak var totaleLabel: UILabel!
     @IBOutlet weak var detraibileLabel: UILabel!
+    @IBOutlet weak var esportaBottone: UIButton!
     
 }

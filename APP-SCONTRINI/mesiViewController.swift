@@ -42,34 +42,16 @@ class mesiViewController: UIViewController,  UITableViewDataSource , UITableView
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-       //let vc = storyboard?.instantiateViewController(withIdentifier: "scontriniViewController") as? scontriniViewController
+    
        let vc = storyboard?.instantiateViewController(withIdentifier: "nonNeHoIdea") as? ProvaBottoneDentroCella
-       //let cell = tableView.cellForRow(at: indexPath)
-      // let cellText = cell!.textLabel?.text ?? "NON RILEVATO"
-       
-        //vc?.meseCella = arrayMesi[indexPath.row]
-        vc?.meseCella = arrayMesi[indexPath.row]
+    
+       vc?.meseCella = arrayMesi[indexPath.row]
        vc?.titoloCella = titoloCella
        
        self.navigationController?.pushViewController(vc!, animated: true)
        }
 
     
-        /*
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         
-            let vc = storyboard?.instantiateViewController(withIdentifier: "mesiViewController") as? mesiViewController
-            
-            let cell = tableView.cellForRow(at: indexPath)
-            let cellText = cell!.textLabel?.text ?? "NON RILEVATO"
-            
-            vc?.titoloCella = cellText
-            
-            self.navigationController?.pushViewController(vc!, animated: true)
-            }
-*/
-    //    @IBOutlet weak var myTableView: UITableView!
-        
         
         override func viewDidLoad() {
            super.viewDidLoad()
@@ -79,9 +61,7 @@ class mesiViewController: UIViewController,  UITableViewDataSource , UITableView
             print(titoloCella)
             // Do any additional setup after loading the view.
         }
-        
-
-        
+   
     func mesi() {
             
             if let uid = Auth.auth().currentUser?.uid {

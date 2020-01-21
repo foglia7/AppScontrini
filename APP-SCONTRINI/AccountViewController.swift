@@ -52,34 +52,9 @@ class AccountViewController: UIViewController {
         }
         
         
-               
-               /* if let idData = results[uid!] as? [String: Any] {
-                       let nome = idData["firstname"] as? String ?? ""
-                       let cognome = idData["lastname"] as? String ?? ""
-                       
-                    self.nomeLabel.text = "   " + nome
-                    self.cognomeLabel.text = "   " + cognome
-                    
-                    print(nome)
-                    print(cognome)
-                    
-                   } */
+            
 }
-           
-       
 
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func logout(_ sender: Any) {
         do {

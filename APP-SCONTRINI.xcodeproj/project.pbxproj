@@ -22,16 +22,15 @@
 		391C630723896479004D6283 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391C630623896479004D6283 /* LogInViewController.swift */; };
 		391DF0DA238BE79900E42123 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391DF0D9238BE79900E42123 /* AccountViewController.swift */; };
 		393B116A23AC1948007E485A /* mesiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B116923AC1948007E485A /* mesiViewController.swift */; };
-		393B116C23AC2C59007E485A /* scontriniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B116B23AC2C59007E485A /* scontriniViewController.swift */; };
 		3944223E23BD56BD00683888 /* ProvaBottoneDentroCella.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3944223D23BD56BD00683888 /* ProvaBottoneDentroCella.swift */; };
-		3944224023BD5FEC00683888 /* ProvettaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3944223F23BD5FEC00683888 /* ProvettaCell.swift */; };
+		39480FC123C3CCF0005E28F0 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39480FC023C3CCF0005E28F0 /* WebViewController.swift */; };
 		3968A21E238DD7DA00039D43 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3968A21D238DD7DA00039D43 /* tessdata */; };
 		397C524C238D782000A82389 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397C524B238D782000A82389 /* PhotoViewController.swift */; };
 		399489F62388989C00EC81CC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 399489F52388989C00EC81CC /* GoogleService-Info.plist */; };
 		39BA2FCB238C47D6005EC1F9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BA2FCA238C47D6005EC1F9 /* MainViewController.swift */; };
 		39C72DCF23A7A56B00065ED8 /* ArchivioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C72DCE23A7A56B00065ED8 /* ArchivioViewController.swift */; };
+		39D4075D23C65E3D00097EFA /* ProvettaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D4075C23C65E3D00097EFA /* ProvettaCell.swift */; };
 		39D49CEB23898B760077229C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D49CEA23898B760077229C /* StartViewController.swift */; };
-		39F93ECA23AE42370039B8B5 /* scontrinoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F93EC923AE42370039B8B5 /* scontrinoCollectionViewCell.swift */; };
 		A641716F3722C8A9D97C378A /* Pods_APP_SCONTRINITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 325FFAC2E62E3B1D52828E41 /* Pods_APP_SCONTRINITests.framework */; };
 		B3BB52F282A3998EFF8F440C /* Pods_APP_SCONTRINI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE309A8F99FD1763AC7D642 /* Pods_APP_SCONTRINI.framework */; };
 /* End PBXBuildFile section */
@@ -78,16 +77,15 @@
 		391C630623896479004D6283 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		391DF0D9238BE79900E42123 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		393B116923AC1948007E485A /* mesiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mesiViewController.swift; sourceTree = "<group>"; };
-		393B116B23AC2C59007E485A /* scontriniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scontriniViewController.swift; sourceTree = "<group>"; };
 		3944223D23BD56BD00683888 /* ProvaBottoneDentroCella.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvaBottoneDentroCella.swift; sourceTree = "<group>"; };
-		3944223F23BD5FEC00683888 /* ProvettaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvettaCell.swift; sourceTree = "<group>"; };
+		39480FC023C3CCF0005E28F0 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3968A21D238DD7DA00039D43 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		397C524B238D782000A82389 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		399489F52388989C00EC81CC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		39BA2FCA238C47D6005EC1F9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010MainViewController.swift"; sourceTree = "<group>"; };
 		39C72DCE23A7A56B00065ED8 /* ArchivioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchivioViewController.swift; sourceTree = "<group>"; };
+		39D4075C23C65E3D00097EFA /* ProvettaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvettaCell.swift; sourceTree = "<group>"; };
 		39D49CEA23898B760077229C /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		39F93EC923AE42370039B8B5 /* scontrinoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scontrinoCollectionViewCell.swift; sourceTree = "<group>"; };
 		450F58671934534939A90066 /* Pods-APP-SCONTRINI-APP-SCONTRINIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SCONTRINI-APP-SCONTRINIUITests.debug.xcconfig"; path = "Target Support Files/Pods-APP-SCONTRINI-APP-SCONTRINIUITests/Pods-APP-SCONTRINI-APP-SCONTRINIUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5BF0E073A9EE6913FE26D5F4 /* Pods-APP-SCONTRINI-APP-SCONTRINIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APP-SCONTRINI-APP-SCONTRINIUITests.release.xcconfig"; path = "Target Support Files/Pods-APP-SCONTRINI-APP-SCONTRINIUITests/Pods-APP-SCONTRINI-APP-SCONTRINIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6B39EC6CF0CECB4E22E0CB9B /* Pods_APP_SCONTRINI_APP_SCONTRINIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APP_SCONTRINI_APP_SCONTRINIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,19 +146,18 @@
 		390EC0FB2382E46900A988D0 /* APP-SCONTRINI */ = {
 			isa = PBXGroup;
 			children = (
+				3968A21D238DD7DA00039D43 /* tessdata */,
 				39053306238B5A9300B5B6AA /* Constants.swift */,
 				390EC0FC2382E46900A988D0 /* AppDelegate.swift */,
 				390EC0FE2382E46900A988D0 /* SceneDelegate.swift */,
-				390EC1002382E46900A988D0 /* FirstViewController.swift */,
-				390EC1022382E46900A988D0 /* SecondViewController.swift */,
+				39D4075C23C65E3D00097EFA /* ProvettaCell.swift */,
 				390EC1042382E46900A988D0 /* Main.storyboard */,
-				3944223F23BD5FEC00683888 /* ProvettaCell.swift */,
 				399489F52388989C00EC81CC /* GoogleService-Info.plist */,
 				390EC1072382E46A00A988D0 /* Assets.xcassets */,
-				3944223D23BD56BD00683888 /* ProvaBottoneDentroCella.swift */,
-				3968A21D238DD7DA00039D43 /* tessdata */,
 				390EC1092382E46A00A988D0 /* LaunchScreen.storyboard */,
 				390EC10C2382E46A00A988D0 /* Info.plist */,
+				390EC1002382E46900A988D0 /* FirstViewController.swift */,
+				390EC1022382E46900A988D0 /* SecondViewController.swift */,
 				391C630423896452004D6283 /* SignUpViewController.swift */,
 				391C630623896479004D6283 /* LogInViewController.swift */,
 				39D49CEA23898B760077229C /* StartViewController.swift */,
@@ -169,8 +166,8 @@
 				397C524B238D782000A82389 /* PhotoViewController.swift */,
 				39C72DCE23A7A56B00065ED8 /* ArchivioViewController.swift */,
 				393B116923AC1948007E485A /* mesiViewController.swift */,
-				393B116B23AC2C59007E485A /* scontriniViewController.swift */,
-				39F93EC923AE42370039B8B5 /* scontrinoCollectionViewCell.swift */,
+				3944223D23BD56BD00683888 /* ProvaBottoneDentroCella.swift */,
+				39480FC023C3CCF0005E28F0 /* WebViewController.swift */,
 			);
 			path = "APP-SCONTRINI";
 			sourceTree = "<group>";
@@ -458,19 +455,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				390EC1032382E46900A988D0 /* SecondViewController.swift in Sources */,
+				39480FC123C3CCF0005E28F0 /* WebViewController.swift in Sources */,
 				393B116A23AC1948007E485A /* mesiViewController.swift in Sources */,
 				39D49CEB23898B760077229C /* StartViewController.swift in Sources */,
+				39D4075D23C65E3D00097EFA /* ProvettaCell.swift in Sources */,
 				39BA2FCB238C47D6005EC1F9 /* MainViewController.swift in Sources */,
 				39C72DCF23A7A56B00065ED8 /* ArchivioViewController.swift in Sources */,
-				39F93ECA23AE42370039B8B5 /* scontrinoCollectionViewCell.swift in Sources */,
-				3944224023BD5FEC00683888 /* ProvettaCell.swift in Sources */,
 				390EC1012382E46900A988D0 /* FirstViewController.swift in Sources */,
 				391C630723896479004D6283 /* LogInViewController.swift in Sources */,
 				3944223E23BD56BD00683888 /* ProvaBottoneDentroCella.swift in Sources */,
 				390EC0FD2382E46900A988D0 /* AppDelegate.swift in Sources */,
 				390EC0FF2382E46900A988D0 /* SceneDelegate.swift in Sources */,
 				391C630523896452004D6283 /* SignUpViewController.swift in Sources */,
-				393B116C23AC2C59007E485A /* scontriniViewController.swift in Sources */,
 				39053307238B5A9300B5B6AA /* Constants.swift in Sources */,
 				391DF0DA238BE79900E42123 /* AccountViewController.swift in Sources */,
 				397C524C238D782000A82389 /* PhotoViewController.swift in Sources */,

@@ -134,8 +134,6 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         imagePicker = UIImagePickerController()
         imagePicker?.delegate = self
        
-        //imagePicker?.allowsEditing = true
-       
      
                   }
         
@@ -166,10 +164,10 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                  print("Ho cambiato le immagini")
        
             if let tesseract = G8Tesseract(language: "ita"){
-            tesseract.delegate = self
-            tesseract.image = image
-            tesseract.recognize()
-            
+                tesseract.delegate = self
+                tesseract.image = image
+                tesseract.recognize()
+                
             let testoScontrino = tesseract.recognizedText
                 
                 print(testoScontrino!)
@@ -179,7 +177,7 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 //trovaData(testo: testoScontrino ?? "DATA NON TROVATA")
                 //trovaCf(testo: testoScontrino ?? "CF NON TROVATO" )
                 
-                let data = matches(for: "\\b(?:20)?(\\d\\d)[-./](0?[1-9]|1[0-2])[-./](3[0-1]|[1-2][0-9]|0?[1-9])\\b", in: testoScontrino ?? "zio")
+                let data = matches(for: "\\b(?:20)?(\\d\\d)[-./](0?[1-9]|1[0-2])[-./](3[0-1]|[1-2][0-9]|0?[1-9])\\b", in: testoScontrino ?? "data")
                 setData(testo: data)
                 
                 print(data)
@@ -198,12 +196,7 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
     
     func trovaTotale(testo: String) {
         
-        //var count = 0
-        //var totale : [Int] = [00,00]
-        
         let arrayTesto = testo.components(separatedBy: "\n")
-        
-        //print(arrayTesto)
         
         for index in arrayTesto {
             
@@ -214,40 +207,12 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                 
                 print("questo è il totale rilevato : \(tot) ")
                 formTotale.text = totfinale
-                
-                
-                /*
-                let string = index
-                let stringArray = string.components(separatedBy: CharacterSet.decimalDigits.inverted)
-                for item in stringArray {
-                    if let number = Int(item) {
-                        while count < 1 {
-                        totale[count] = number
-                        print("number: \(number)")
-                            count = count + 1
-                            
-                        }
-                        
-                    }
                 }
-                
-              
-                count = 0 */
-                       
-            }
-            
-        //let stringArray2 = totale.map { String($0) }
-        //let string2 = stringArray2.joined(separator: ".")
-        
-                          
         }
-        //INSERIRE VALORE IN TEXT FIELD
 }
     
-        func trovaDetraibile(testo: String) {
-           // var count = 0
-           // var totale : [Int] = [00,00]
-            
+    func trovaDetraibile(testo: String) {
+         
             let arrayTesto = testo.components(separatedBy: "\n")
             
             print(arrayTesto)
@@ -261,31 +226,10 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
                                    
                                    print("questo è il totale rilevato : \(detra) ")
                                    formTotale.text = detrafinale
-                    
-                    /*
-                    let string = index
-                    let stringArray = string.components(separatedBy: CharacterSet.decimalDigits.inverted)
-                    for item in stringArray {
-                        if let number = Int(item) {
-                            
-                            totale[count] = number
-                            print("number: \(number)")
-                            count = count + 1
-                            
-                        }
-                    }
-                    
-                count = 0 */
+      
                            
                 }
-                
-             //   let stringArray2 = totale.map { String($0) }
-             //   let string2 = stringArray2.joined(separator: ".")
-                                 
-            // formDetraibile.text = string2
-                              
             }
-            //INSERIRE VALORE IN TEXT FIELD
     }
     
     func setCf (testo:[String]){
@@ -354,6 +298,7 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
         self.formDetraibile.text = nil
         let yourImage: UIImage = UIImage(named: "bill")!
         self.imageView.image = yourImage
+        self.datePicker.date = Date()
     }
     func strHash(_ str: String) -> UInt64 {
            var result = UInt64 (5381)
@@ -363,7 +308,10 @@ class PhotoViewController: UIViewController, UIImagePickerControllerDelegate, UI
            }
            return result
        }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+ 
   
     
 }
